@@ -1,14 +1,163 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Enso Biosciences</title>
-  </head>
-  <body style="font-family: sans-serif; margin: 40px;">
-    <h1>Enso Biosciences</h1>
-    <p>AI co-pilot for cancer treatment decisions.</p>
-    <p>Founder: Luca Maria Menga</p>
-    <p>Email: <a href="mailto:lucammenga@gmail.com">lucammenga@gmail.com</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/luca-maria-menga-a2b552258">View profile</a></p>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Enso Biosciences — Causal, Real-Time Clinical Co-pilot</title>
+  <meta name="description" content="Enso Biosciences builds a causal, real-time, multimodal clinical co-pilot for oncology.">
+  <meta property="og:title" content="Enso Biosciences — Causal, Real-Time Clinical Co-pilot" />
+  <meta property="og:description" content="AI co-pilot for cancer treatment decisions. Causal. Real-time. Multimodal." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://lucam00.github.io/enso-biosciences/" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Enso Biosciences home">
+      <img src="assets/logo.svg" alt="" class="logo" />
+      <span>Enso Biosciences</span>
+    </a>
+    <nav class="nav">
+      <a href="#mission">Mission</a>
+      <a href="#product">Product</a>
+      <a href="#platform">Platform</a>
+      <a href="#roadmap">Roadmap</a>
+      <a href="#founder">Founder</a>
+      <a href="#contact" class="btn small">Contact</a>
+    </nav>
+    <button class="menu-btn" aria-label="Menu" onclick="toggleMenu()">☰</button>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-inner">
+        <h1>Causal, real-time, multimodal<br/><span class="accent">clinical co-pilot for oncology</span>.</h1>
+        <p class="lead">De-risking the choice between surgery and chemotherapy by predicting patient-specific treatment response — and validating mechanisms in the wet lab.</p>
+        <div class="cta-row">
+          <a class="btn" href="#contact">Talk to us</a>
+          <a class="btn ghost" href="#product">See how it works</a>
+        </div>
+        <ul class="badges">
+          <li>⚡ Real-time bedside support</li>
+          <li>🧬🖼️ Multimodal (WSI + NGS + EHR)</li>
+          <li>🧪 Causal validation (CRISPR/organoids)</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="mission" class="split">
+      <div>
+        <h2>Our mission</h2>
+        <p>Replace educated guesswork with <strong>causal, patient-specific decisions</strong> so every cancer patient gets the right therapy first.</p>
+        <p>We start with a high-margin SaaS co-pilot that generates proprietary outcomes data, then leverage that data to validate novel targets and build an invaluable IP portfolio.</p>
+      </div>
+      <div class="card stat">
+        <h3>The opportunity</h3>
+        <ul>
+          <li><strong>$19B</strong> AI-in-oncology TAM (broader category)</li>
+          <li><strong>~2.4M</strong> target patients/yr (US+EU top 5 tumors)</li>
+          <li><strong>$500–$750M</strong> potential annual headline value from 2–3 preclinical deals</li>
+        </ul>
+        <small class="note">Figures indicative; see deck for sourcing and methods.</small>
+      </div>
+    </section>
+
+    <section id="product">
+      <h2>Clinical co-pilot</h2>
+      <p class="lead">Assist tumor boards with <strong>real-time</strong>, <strong>multimodal</strong> recommendations tied to <strong>causal biology</strong>.</p>
+      <div class="features">
+        <div class="feature">
+          <h3>Multimodal fusion</h3>
+          <p>Fuses <em>digital pathology</em>, <em>genomics</em>, and <em>EHR</em> into a single prediction for therapy response.</p>
+        </div>
+        <div class="feature">
+          <h3>On-workflow</h3>
+          <p>Delivers guidance inside clinical workflows; fast, transparent, auditable.</p>
+        </div>
+        <div class="feature">
+          <h3>Causal loop</h3>
+          <p>AI-nominated biomarkers are validated via high-throughput functional genomics (e.g., CRISPR), strengthening clinical confidence.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="platform" class="split">
+      <div class="card">
+        <h2>Platform: data → discovery</h2>
+        <p>Closed-loop engine: <strong>Data → Model → Decisions → Outcomes → Targets → Validation → Better Model</strong>.</p>
+        <ul class="ticks">
+          <li>Generate proprietary longitudinal outcomes data</li>
+          <li>Validate mechanisms in-house to de-risk targets</li>
+          <li>License targets (upfront + milestones + royalties)</li>
+        </ul>
+      </div>
+      <div class="card outline">
+        <h3>Clinical & research value</h3>
+        <ul class="ticks">
+          <li>Fewer ineffective treatments</li>
+          <li>Faster trials with smarter enrichment</li>
+          <li>Portfolio of validated targets</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="roadmap">
+      <h2>12-month roadmap</h2>
+      <div class="timeline">
+        <div class="step">
+          <h4>Months 1–3</h4>
+          <p>Recruit CTO/CPO, secure first data partnership, ship MVP.</p>
+        </div>
+        <div class="step">
+          <h4>Months 4–9</h4>
+          <p>Launch 2–3 paid pilots, generate clinical validation data.</p>
+        </div>
+        <div class="step">
+          <h4>Months 10–12</h4>
+          <p>Convert to recurring revenue; initiate first IP deal.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="founder" class="split founder">
+      <div>
+        <h2>Founder</h2>
+        <p><strong>Luca Maria Menga</strong> — MD &amp; BSc Biomedical Engineering (110/110 e lode). Physician-engineer and 0→1 builder.</p>
+        <ul class="ticks">
+          <li>Co-initiated & co-led a multi-year cancer project to a validated target</li>
+          <li>Collaborations with Stanford/SLAC & European Institute of Oncology</li>
+          <li>Armenise–Harvard Summer Fellow ’24 (2 mo)</li>
+          <li>Shipped v0.1 predictive engine on multicenter histology dataset</li>
+        </ul>
+      </div>
+      <div class="card image">
+        <img src="https://avatars.githubusercontent.com/u/7256278?v=4" alt="Founder headshot" />
+      </div>
+    </section>
+
+    <section id="contact" class="cta">
+      <h2>Let’s talk</h2>
+      <p>Interested in partnering as a pilot site, advisor, or co-founder?</p>
+      <div class="cta-row">
+        <a class="btn" href="mailto:lucammenga@gmail.com">Email Luca</a>
+        <a class="btn ghost" href="https://www.linkedin.com/in/luca-maria-menga-a2b552258">LinkedIn</a>
+      </div>
+      <small class="note">© Enso Biosciences — All rights reserved.</small>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>Enso Biosciences</div>
+    <div class="foot-links">
+      <a href="#mission">Mission</a>
+      <a href="#product">Product</a>
+      <a href="#platform">Platform</a>
+      <a href="#roadmap">Roadmap</a>
+      <a href="#founder">Founder</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
 </html>
