@@ -85,3 +85,15 @@ p { color: var(--ink-dim); }
 
 /* Mobile menu */
 .mobile-open .nav { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; position: absolute; top: 56px; left: 0; right: 0; padding: 16px 20px; background: var(--panel); border-bottom: 1px solid var(--border); }
+
+.notice{
+  position: sticky; top: 0; z-index: 40;
+  display: flex; align-items: center; justify-content: center; gap: 12px;
+  padding: 8px 14px; background: var(--panel); border-bottom: 1px solid var(--border);
+  color: var(--ink-dim); font-size: 14px;
+}
+.notice a{ text-decoration: underline; }
+.notice-close{
+  background: transparent; border: 1px solid var(--border); color: var(--ink-dim);
+  padding: 2px 8px; border-radius: 8px; cursor: pointer;
+}
